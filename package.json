@@ -1,15 +1,17 @@
 {
   "name": "admin_backend",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch db.json --port 5000"
+    "server": "json-server --watch db.json --port 5000",
+    "client": "npm start --prefix client",
+    "dev":"concurrently \" npm run server\" \"npm run client\""
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "json-server": "^1.0.0-beta.2"
   }
 }
