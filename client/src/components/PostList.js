@@ -8,8 +8,8 @@ const PostList = (props) => {
                 <TextField source="id" />
                 <TextField source="title" />
                 <DateField source="publishedAt" />
-                <EditButton basePath="/posts" />
-                <DeleteButton basePath="/posts" />
+                <EditButton />
+                <DeleteButton />
             </Datagrid>
         </List>
     );
